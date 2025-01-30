@@ -1,0 +1,19 @@
+<p>empleado works!</p>
+
+<strong>Primer empleado registrado</strong>
+<ul>
+    <li>{{trabajador[0].nombre}}</li>
+    <li>{{trabajador[0].edad}}</li>
+    <li>{{trabajador[0].cargo}}</li>
+    <li>Contratado: {{trabajador[0].contratado ? 'Sí' : 'No'}}</li>
+</ul>
+
+<ul>
+    @if (trabajadorExterno) {
+        <button (click)="cambiarExterno(false)">Mostrar internos</button>
+        <li>{{empleadoExt.nombre}}</li>
+    }@else{
+        <button (click)="cambiarExterno(true)">Mostrar externos</button>
+        <li>Lista de trabajadores internos</li>
+    }
+</ul>
