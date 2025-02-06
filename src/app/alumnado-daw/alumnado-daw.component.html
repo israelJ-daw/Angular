@@ -1,0 +1,24 @@
+<p>Alumnados Matriculados</p>
+
+<ul>
+
+    @if (alumnos1) {
+        <button (click)="cambiar(false)">Mostrar Alumnos primer curso</button>
+
+            <p>{{ alumnos1[0].nombre }} {{ alumnos1[0].apellidos }} {{ alumnos1[0].dni }} {{ alumnos1[0].edad }}
+            <p>{{ alumnos1[1].nombre }} {{ alumnos1[1].apellidos }} {{ alumnos1[1].dni }} {{ alumnos1[1].edad }}    
+            <p>{{ alumnos1[2].nombre }} {{ alumnos1[2].apellidos }} {{ alumnos1[2].dni }} {{ alumnos1[2].edad }}
+    
+    }@else {
+        <button (click)="cambiar(true)">Mostrar Alumnos segundo curso</button>
+
+            <p>{{ alumnos2[0].nombre }} {{ alumnos2[0].apellidos }} {{ alumnos2[0].dni }} {{ alumnos2[0].edad }}
+            <p>{{ alumnos2[1].nombre }} {{ alumnos2[1].apellidos }} {{ alumnos2[1].dni }} {{ alumnos2[1].edad }}  
+            <p>{{ alumnos2[2].nombre }} {{ alumnos2[2].apellidos }} {{ alumnos2[2].dni }} {{ alumnos2[2].edad }}
+        
+
+    }
+
+
+
+</ul>    

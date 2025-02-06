@@ -9,13 +9,13 @@ import { Empleado } from './empleado';
 })
 
 export class EmpleadoComponent {
-  public title = "Bienvenido empleado modelo";
+  public title = "Hola Modelo Empleado";
   public empleadoExt: Empleado;
   public trabajador:Empleado[];
   public trabajadorExterno: boolean;
 
   constructor(){
-    this.empleadoExt = new Empleado("Selena", 41, "Generente", true);
+    this.empleadoExt = new Empleado("David", 29, "Supervisor Jefe", true);
     this.trabajador = [
       new Empleado('Pepito', 45 , "Programador", true),
       new Empleado("Jose", 33, "Administrador", true),
