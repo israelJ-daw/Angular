@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personajes de Marvel</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Personajes de Marvel</a>
+    </div>
+  </nav>
+
+  <div class="container mt-4 flex-grow-1">
+    <div class="row g-4">
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100 shadow-sm border-0">
+          <img [src]="'https://image.tmdb.org/t/p/w500' + '/someimage.jpg'" class="card-img-top rounded" alt="Iron Man">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-bold">Iron Man</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100 shadow-sm border-0">
+          <img [src]="'https://image.tmdb.org/t/p/w500' + '/anotherimage.jpg'" class="card-img-top rounded" alt="Spider Man">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-bold">Spider Man</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agregar más personajes manualmente -->
+    </div>
+  </div>
+
+  <!-- FOOTER FIJO -->
+  <footer class="bg-dark text-light text-center py-3 mt-4">
+    <p class="mb-0">© 2025 Personajes de Marvel | Todos los derechos reservados a mí</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
